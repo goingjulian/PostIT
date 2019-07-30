@@ -1,0 +1,644 @@
+/* Global */
+html {
+    overflow-y: auto !important;
+    background: rgb(242, 242, 242) !important;
+
+}
+
+section:first-of-type:not(#login) {
+    padding-top: 55px;
+}
+
+.app {
+    margin-bottom: 100px !important;
+}
+
+/* Nav */
+.user .is-64x64 {
+    width: 100% !important;
+    height: auto !important;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #5cb85c;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #5cb85c;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+nav#navbar.navbar.is-fixed-top {
+    border-bottom: 1px solid lightgray;
+}
+
+.notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+nav#navbar.navbar div#navbar.navbar-menu {
+    text-align: center;
+}
+
+/* Forms */
+#addOrgForm {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+
+#waitForMail {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#waitForMail svg {
+    padding: 10px;
+}
+
+#addonField {
+    width: 100%
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.dropzone:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #5a90e8, #4f84dc, #4478cf, #386cc3, #2c61b7) !important;
+    animation: fadein 0.3s;
+    color: white;
+}
+
+.dropzone:hover p.subtitle, .dropzone:hover p.subtitle span.fakeURL {
+    color: white;
+}
+
+.dropzone:hover h3 {
+    color: white !important;
+}
+
+div.box.dropzone.dragActive {
+    background-image: linear-gradient(to right top, #5a90e8, #4f84dc, #4478cf, #386cc3, #2c61b7) !important;
+    animation: fadein 0.3s;
+    color: white !important;
+}
+
+div.box.dropzone.dragActive h3 {
+    color: white !important;
+}
+
+div.box.dropzone.dragActive p.subtitle {
+    color: white;
+}
+
+div.box.dropzone.dragValid {
+    background-image: linear-gradient(to left, #29e900, #23d108, #1db90d, #19a20f, #158b0f) !important;
+    animation: fadein 0.3s;
+    color: white !important;
+}
+
+div.box.dropzone.dragValid h3 {
+    color: white !important;
+}
+
+div.box.dropzone.dragValid p.subtitle {
+    color: white;
+}
+
+div.box.dropzone.dragReject {
+    background-image: linear-gradient(to left, #f60202, #d51619, #b42123, #912728, #6f2a2a) !important;
+    animation: fadein 0.3s;
+    color: white !important;
+}
+
+div.box.dropzone.dragReject h3 {
+    color: white !important;
+}
+
+div.box.dropzone.dragReject p.subtitle {
+    color: white;
+}
+
+div.box.dropzone.dragWait {
+    background-image: linear-gradient(to right, #ffff00, #eaec25, #d5d934, #c1c63d, #aeb344) !important;
+    animation: fadein 0.3s;
+    color: white !important;
+}
+
+div.box.dropzone.dragWait h3 {
+    color: white !important;
+}
+
+div.box.dropzone.dragWait p.subtitle {
+    color: white;
+}
+
+div.box.dropzone.dragWait:hover {
+    cursor: wait;
+}
+
+div.box.dropzone div.upload img {
+    width: 200px;
+    height: auto;
+    max-height: 300px;
+}
+
+.allowedDomain {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center;
+}
+
+.allowedDomain h1 {
+    padding: 0px 20px;
+}
+
+.all-center {
+    padding: 0 50px 0 50px;
+    text-align: center;
+}
+
+.browserLogo {
+    width: 80px;
+    height: auto;
+    padding: 10px;
+}
+
+.jsurl {
+    display: block;
+}
+
+.board-nav {
+    position: fixed;
+    top: 20px;
+    right: 3%;
+    font-size: 28px;
+    color: #363636;
+}
+
+#user-overview {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#profileUser {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#profPage {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+/* Section login */
+section#login {
+    background: white;
+}
+
+section#login .columns {
+    min-height: 100vh;
+    margin: 0px;
+
+}
+
+
+section#login .flex-v-center {
+    display: flex;
+    align-items: center;
+
+}
+
+section#login .logo {
+    margin: 0 auto;
+    width: 100%;
+}
+
+section#login .company-img {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+    );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section#login .btn-group{
+     margin-top:10px;
+ }
+
+section#login .logintext{
+    padding:10px;
+}
+
+/* Section screen */
+
+section#screen {
+    min-height: 100vh;
+
+}
+
+#screen div.columns div.column.is-10.is-offset-1 div div#idea.box.upvoted {
+    background-image: linear-gradient(to right top, #5a90e8, #4f84dc, #4478cf, #386cc3, #2c61b7) !important;
+}
+
+#screen div.columns div.column.is-10.is-offset-1 div div#idea.box.upvoted h1, div#idea.box.upvoted p, div#idea.box.upvoted h2 {
+    color: white !important;
+}
+
+#screen #idea .mostVoted {
+    background-image: url("https://image.freepik.com/free-vector/business-leader-man-holding-winner-golden-cup_3446-650.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Idea */
+
+/* Section detail */
+section#detail {
+    height: 100vh;
+    padding-top: 75px !important;
+}
+
+#idea-author-info #author-name {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Section overview */
+section#overview {
+    padding: 75px 20px 20px 20px !important;
+    height: 100vh;
+}
+
+section#overview div.container {
+    text-align: center;
+}
+
+section.error-container {
+    display: flex;
+    align-items: center;
+    color: #8c8c8c;
+    padding: 75px 20px 20px 20px !important
+}
+
+section.error-container h3 {
+    color: #8c8c8c;
+}
+
+section.error-container p.not-found {
+    margin-top: 50px;
+}
+
+/* Section Error */
+
+section#error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0px 0px !important;
+    text-align: center;
+}
+
+section#error .container {
+    display: block;
+    color: #8c8c8c;
+}
+
+section#error .content {
+    width: 50%;
+    background: white;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+section#error .title {
+    color: #8c8c8c;
+    font-size: 8rem;
+}
+
+.idea-description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#add-button-container {
+    text-align: center;
+}
+
+#add-button {
+    color: rgb(46, 204, 113) !important;
+    cursor: pointer;
+}
+
+#description-link {
+    color: black !important;
+}
+
+/* Section register */
+section#register #errorMessage {
+    white-space: pre-wrap;
+}
+
+/* #links */
+.register-link {
+    font-size: 0.75rem;
+}
+
+/* #buttons */
+.cta-orange {
+    background-color: rgb(230, 126, 34) !important;
+    border-color: transparent !important;
+    color: white !important;
+}
+
+.cta-green {
+    background-color: rgb(46, 204, 113) !important;
+    border-color: transparent !important;
+    color: white !important;
+}
+
+.btn-group {
+    justify-content: center !important;
+}
+
+/* upvote */
+.notUpvoted svg.svg-inline--fa.fa-chevron-up.fa-w-14 {
+    color: rgb(166, 166, 166);
+}
+
+.upvoted svg.svg-inline--fa.fa-chevron-up.fa-w-14 {
+    color: rgb(230, 126, 34);
+}
+
+.upvote-pointer{
+    cursor: pointer;
+}
+
+/* Progress bar */
+.progress-bar {
+    position: fixed !important;
+    bottom: 0 !important;
+    margin-bottom: 0px !important;
+    border-radius: 0 !important;
+}
+
+/* Notifications */
+.notifications-container {
+    width: 100%;
+    position: fixed !important;
+    bottom: 0 !important;
+    z-index: 999;
+}
+
+.notifications-container > div {
+    margin-bottom: 1px !important;
+}
+
+.error-notification {
+    margin-bottom: 0px !important;
+    width: 100%;
+    z-index: 999;
+    margin-bottom: 1px !important;
+}
+
+
+/* Board components */
+
+.no-opacity{
+    opacity: 0;
+}
+
+.fakeURL {
+    color: #2c61b7;
+}
+
+#actionText {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    margin: 0;
+}
+
+#qrCode {
+    position: fixed !important;
+    right: 5% !important;
+    bottom: 5% !important;
+}
+
+/* --- */
+
+/* Mobile */
+
+/* - extra small */
+@media (max-width: 500px) {
+
+    .custom-columns {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    section#login .company-img {
+        display: none;
+    }
+
+    section#login .company-img {
+        display: none;
+    }
+
+    section#screen #actionText {
+        display: none;
+    }
+
+    section#screen.has-text-centered canvas {
+        display: none;
+    }
+
+    /*body {*/
+        /*border: 2px solid yellow;*/
+    /*}*/
+}
+
+/* - normal */
+@media screen and (min-width: 501px) and (max-width: 768px) {
+
+    section#login .company-img {
+        display: none;
+    }
+
+    section#screen #actionText {
+        display: none;
+    }
+
+    section#login .logo {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    section#screen.has-text-centered canvas {
+        display: none;
+    }
+    /*body {*/
+        /*border: 2px solid purple;*/
+    /*}*/
+
+
+}
+
+/* Tablet and higher*/
+@media screen and (min-width: 769px){
+    #idea h1.title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+/* Tablet*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /*body {*/
+    /*border: 2px solid blue;*/
+    /*}*/
+}
+
+
+/* Navbar hamburger */
+@media screen and (max-width: 1087px) {
+    nav#navbar.navbar div#navbar.navbar-menu.is-active .user, nav#navbar.navbar div#navbar.navbar-menu.is-active .notification-switch {
+        display: none;
+    }
+
+    navbar-item a:focus,
+    navbar-item a:focus-within,
+    navbar-item a:hover,
+    navbar-item a.is-active,
+    navbar-link a:focus,
+    navbar-link a:focus-within,
+    navbar-link a:hover,
+    navbar-link a.is-active {
+        background-color: #fafafa !important;
+        color: rgb(74, 74, 74) !important;
+    }
+
+    div.navbar-item.onclick:focus,
+    div.navbar-item.onclick:focus-within,
+    div.navbar-item.onclick:hover,
+    div.navbar-item.onclick.is-active,
+    div.navbar-item.onclick:focus,
+    div.navbar-item.onclick:focus-within,
+    div.navbar-item.onclick:hover,
+    div.navbar-item.onclick.is-active {
+        background-color: #fafafa !important;
+        color: rgb(74, 74, 74) !important;
+        cursor: pointer;
+    }
+}
+
+/*  nabar default */
+@media screen and (min-width: 1088px) {
+    a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+        background: transparent !important;
+        color: #4a4a4a !important;
+    }
+
+}
+
+
+/* desktop */
+@media screen and (min-width: 1024px) and (max-width: 1216px) {
+    /*body {*/
+    /*border: 2px solid red;*/
+    /*}*/
+    #idea h1.title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* widescreen */
+@media screen and (min-width: 1216px) and (max-width: 1408px) {
+    /*body {*/
+    /*border: 2px solid orange;*/
+    /*}*/
+
+}
+
+/* fullhd */
+@media screen and (min-width: 1408px) {
+    section#screen {
+        overflow: hidden;
+        /*max-height: 100vh;*/
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "postit-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "test": "jest --verbose --maxWorkers=1 --coverage --config=./jest.config.js",
+    "serve": "node ./server.js",
+    "gen-apidoc": "apidoc -i routes/ -o apidoc/",
+    "e2e": "jest --testMatch=\"**/*.e2e.js\"",
+    "puppeteer-demo": "jest --testMatch=\"**/*puppeteer-demo.js\""
+  },
+  "dependencies": {
+    "apidoc": "^0.17.7",
+    "body-parser": "latest",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "~4.16.0",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.5.3",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.1",
+    "node-fetch": "^2.3.0",
+    "nodemailer": "^6.1.1",
+    "shortid": "^2.2.14",
+    "web-push": "^3.3.5",
+    "ws": "^6.2.1"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "puppeteer": "^1.17.0",
+    "mockgoose": "^8.0.1",
+    "supertest": "^4.0.2"
+  }
+}
