@@ -1,34 +1,12 @@
-# [feb2019-project-armadillo](https://en.wikipedia.org/wiki/Armadillo)
+# PostIT
+PostIT was developed as part of a school project. The goal was to develop a stable and usable application in a known programming language and toolset.
 
-[![Build Status](https://travis-ci.com/HANICA-DWA/feb2019-project-armadillo.svg?token=VLhqiviUtLaZC2kxyNns&branch=development)](https://travis-ci.com/HANICA-DWA/feb2019-project-armadillo)
+## The concept
+PostIT provides a digital idea board for your organisation. You can create your own "space" on the app. Employees can visit your space by visiting the spaces' unique URL. On your organisations space, employees can upvote existing ideas without logging in. They can only vote once per idea however. An employee can login by entering their work e-mail. The administrator of the space can set the e-mail domains that the employee is allowed to register with. Logged in employees can post ideas and comments.
 
-Zie [postit.korfdegidts.nl](http://postit.korfdegidts.nl) voor de live versie van onze applicatie
-Zie [postit.korfdegidts.nl/doc](http://postit.korfdegidts.nl/doc) voor de API documentatie
+There is also a special viewing mode for public displays. All ideas of the organisation are shown. New ideas and comments ae highlighted on this view, upvotes get special attention as well.
 
-<img src="./doc/img/logo-final.png" alt="drawing" width="200"/>
+With serviceworkers and web-push, web notifications are supported as well. These notifications can be turned on or off per organisation and are sent when new ideas or comments are posted to the organisations space.
 
-Volg de stappen in setup.md om een developmentomgeving van de applicatie te starten.
-
-### Leden
-
-- Julian Korf de Gidts
-- Kevin van Schaijk
-- Randy Grouls
-
-### Product Owner
-
-Fritz van Deventer  
-Fritz.VanDeventer@han.nl
-
-### Coach
-
-Lars Tijsma  
-Lars.Tijsma@han.nl
-
-### Skills
-
-Peter Schulz  
-Peter.Schulz@han.nl
-
-## Onze toolstack
-![](./doc/img/toolstack.png)
+## Toolstack
+The PostIT client application was developed in React + Redux for state management. The backend was developed in NodeJS + Express, combined with the ws library for Websockets integration.
