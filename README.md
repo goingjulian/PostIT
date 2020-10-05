@@ -13,7 +13,7 @@ The PostIT client application was developed in React + Redux for state managemen
 
 # The original assignment in Dutch
 
-Op een kantoor bij **verborgen** hebben veel mensen ideeën, maar niet altijd een kanaal om deze te delen. Er zijn ook veel grote schermen beschikbaar. Maar deze worden nu niet echt zinnig gebruikt.
+Op een kantoor bij de opdrachtgever hebben veel mensen ideeën, maar niet altijd een kanaal om deze te delen. Er zijn ook veel grote schermen beschikbaar. Maar deze worden nu niet echt zinnig gebruikt.
 Om de ideeën te delen is er een concept bedacht. Een applicatie die op het scherm aangeeft welke verschillende ideeën er zijn. Daar kan je dan op stemmen door met je telefoon een QR-code of een pin in te toetsen op je telefoon.
 Op je telefoon zou je dan ook nieuwe ideeën kunnen toevoegen.
 
