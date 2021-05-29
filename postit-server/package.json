@@ -26,7 +26,7 @@
     "nodemailer": "^6.1.1",
     "shortid": "^2.2.14",
     "web-push": "^3.3.5",
-    "ws": "^6.2.1"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "jest": "^24.7.1",
